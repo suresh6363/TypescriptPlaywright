@@ -5,15 +5,15 @@ const usRegion='us'
 const localConfig: TuiPlaywrightTestsConfig = {
   US_User:{
     
-    url:`https://www.tui.be/${usRegion}`,
+    url:`https://www.tui.co.uk`,
   },
    UK_User:{
     
-    url:`https://www.tui.be/${ukRegion}`
+    url:`https://www.tui.co.uk`
   },
    NL_User:{
    
-    url:`https://www.tui.be/${nlRegion}`,
+    url:`https://www.tui.co.uk`,
   },
 };
 export default localConfig;

@@ -16,10 +16,12 @@ export default class HomePage {
     readonly page: Page;
     readonly elements: Elements;
     readonly homePageCookiesButtonValue: (labelName: string) => Locator;
+    readonly getTextByPlaceHolder: (placeholderText:string)=>Locator;
 
     constructor(page: Page) {
         this.page = page;
         this.elements = {} as Elements;
+        this.getTextByPlaceHolder=(text:string)=>page.getByPlaceholder(text);
         this.homePageCookiesButtonValue = (labelName: string) => page.locator(`//*/button[@id='${labelName}']`);
 
         Object.entries(elements).forEach(([key, value]) => {

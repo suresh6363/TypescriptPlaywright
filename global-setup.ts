@@ -3,7 +3,7 @@ import setup from './src/tui/fixtures/baseTest';
 
 for (const userRole of userAccessMatrix.allRegions) {
   setup(`setup for ${userRole}`, async ({ loginPage }) => {
-    console.log(`---- BASE URL ---- : https://www.tui.be/nl`);
+    console.log(`---- BASE URL ---- : https://www.tui.co.uk`);
     await loginPage.goto();
   });
 }
