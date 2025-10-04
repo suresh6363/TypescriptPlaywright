@@ -11,6 +11,6 @@ export default class LoginPage {
     this.page = page;
   }
   async goto(): Promise<void> {
-    await this.page.goto('https://www.tui.be/nl');
+    await this.page.goto('https://www.tui.co.uk');
   }
 }

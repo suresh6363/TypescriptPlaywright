@@ -16,6 +16,7 @@ const baseConfig: PlaywrightTestConfig = {
     launchOptions: { slowMo: 1000 },
     video: 'retain-on-failure',
     screenshot: 'only-on-failure',
+    storageState:undefined,
     // proxy: {
     //   server: 'http://your-uk-proxy:port',
     //   username: 'user',
