@@ -13,7 +13,6 @@ test.describe('Tui home page',()=>{
         expect(await homePage.verifyCookiesWindow('cmManage')).toBe("Manage");
         expect(await homePage.verifyCookiesWindow('cmDecline')).toBe("Decline");
         await homePage.homePageCookiesButtonValue('cmCloseBanner').click();
-        await homePage.page.pause();
         await homePage.clickInputFieldTextBox(0);
         await homePage.selectCity(0);
         await homePage.selectDepartureAirportORHotel('Amsterdam Canal Hotel');
